@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
+  <title>Frontend Mentor | Product preview card component</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* footer styles */
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    /* Pink Content that contains all the contents */
+    .content {
+      background-color: hsl(30, 38%, 92%);
+      margin: 10% 3%;
+    }
+
+    /* div containing pictures and writings styles */
+    .float-clear {
+      padding: 8% 18%;
+    }
+
+
+/* div containing text */
+.text{
+  padding: 5% 9% 0% 6%;
+}
+
+    /* img styles */
+    img {
+      width: 100%;
+      z-index: -2;
+    }
+.image{
+  margin-right: -11px;
+}
+
+    /* h1-Gabrielle, h2-1499 styles */
+    h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 1;
+      color: hsl(212, 21%, 14%);
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: hsl(158, 36%, 37%);
+      position: relative;
+      top: 7px;
+      margin-right: 20px;
+    }
+
+    /* joint styles */
+    h2,.h5-div,h6 {
+      display: inline-block;
+    }
+
+    h4,h5,p {
+      color: hsl(228, 12%, 48%);
+    }
+
+    /* h5-169,h4-perfume,p-afloral */
+
+    h4{
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+            }
+    h5 {
+      text-decoration: line-through;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight:500;
+
+    }
+
+   h6{
+     font-size: 18px;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     margin-left: 9px;
+   }
+
+   svg{
+     font-weight: 900;
+   }
+
+    p {
+      font-size: 18px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      margin-top: 30px;
+    }
+
+    .text {
+      background-color: hsl(0, 0%, 100%);
+      text-align: left;
+      ;
+    }
+
+    /* style for pricing */
+    .pricing{
+      margin-top: 30px;
+    }
+
+    button {
+      background-color: hsl(158, 36%, 37%);
+      color: white;
+      border-radius: 7%;
+      border-style: none;
+      text-align: center;
+      width: 100%;
+      margin-top: 40px;
+      /* font-family: 'Montserrat', sans-serif; */
+
+    }
+  /* media queries */
+  @media only screen and (max-width: 600px){
+button{
+  margin-bottom: 20px;
+}
+
+img{
+  width: 103%;
+  object-fit: cover;
+  height: 53%;
+  z-index: 1;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.float-clear{
+ padding: 0;
+ height: 850px;
+}
+
+ .image{
+   padding-left: 0;
+ }
+.content{
+  margin: 0;
+    padding: 20px 30px;
+}
+
+.text{
+  position: relative;
+  bottom: 318px;
+}
+
+  }
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="content">
+    <!-- contains all the contents -->
+
+    <div class="float-clear row">
+      <!-- this is the row -->
+
+      <div class="image col-lg-6">
+        <!-- contains the image -->
+
+        <img src="images/image-product-desktop.jpg" alt="product-img">
+      </div>
+
+      <div class="text col-lg-6">
+        <!-- contains the text -->
+
+        <h4>P E R F U M E</h4>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="pricing">
+          <!-- contains the pricing   -->
+
+          <h2>$149.99</h2>
+
+          <div class="h5-div">
+            <h5>$169.99</h5>
+          </div>
+        </div>
+
+        <div class="button">
+          <!-- contains the button -->
+
+          <button type="button" name="button" class="btn btn-lg btn-success"> <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+                fill="#FFF" style=" font-weight: 700;" />
+            </svg> <h6>Add to Cart</h6></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="wa.me/+2347016265809">Adewole Goodnews</a>.
+  </div>
+
+</body>
+
+</html>
